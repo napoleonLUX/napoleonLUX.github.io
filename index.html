@@ -1277,8 +1277,18 @@
   <div data-i18n="footer_note">Unofficial site, made by the alliance</div>
 </footer>
 
+<script>
+  document.querySelectorAll('.guide').forEach(g=>{
+    g.addEventListener('click',()=>g.classList.toggle('open'));
+  });
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+  },{threshold:.15});
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+</script>
 
 <script src="i18n.js"></script>
 
-</body>
+
 </html>
