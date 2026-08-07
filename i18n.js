@@ -354,7 +354,7 @@
     ko: {
       nav_alliance:"연맹", nav_news:"소식", nav_leadership:"지도부", nav_nap:"불가침조약", nav_events:"이벤트", nav_guides:"가이드", nav_codes:"코드",
       milestone_label:'다음 전투력 목표 <strong>2B</strong>',
-      milestone_remain:'— 잔액: 9천만,
+      milestone_remain:'— 잔액: 9천만',
       hero_region_tag:"4511 서버",
       hero_sub:"추위가 모든 것을 앗아갔을 때, <strong>LUX</strong>는 불빛을 지켰습니다. Whiteout Survival 4511 서버의 국제 연맹 — 규율, 팀워크, 그리고 절대 꺼지지 않는 불꽃.",
       scroll_cue:"스크롤 ↓",
