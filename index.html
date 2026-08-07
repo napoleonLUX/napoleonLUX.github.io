@@ -79,19 +79,29 @@
   nav a:hover{color:var(--ice);}
   nav a:hover::after{width:100%;}
 
-  .lang-btn{
-    font-family:var(--mono);
-    font-size:.75rem;
-    letter-spacing:.1em;
-    color:var(--frost);
-    background:transparent;
-    border:1px solid var(--border-strong);
-    padding:.4rem .8rem;
-    cursor:pointer;
-    margin-left:1.5rem;
-    transition:background .25s ease, color .25s ease;
-  }
-  .lang-btn:hover{background:rgba(143,217,232,.1);color:var(--ice);}
+  .l.lang-select-wrap{position:relative;margin-left:1.5rem;}
+.lang-select{
+  font-family:var(--mono);
+  font-size:.75rem;
+  letter-spacing:.1em;
+  color:var(--frost);
+  background:var(--panel);
+  border:1px solid var(--border-strong);
+  padding:.4rem 1.6rem .4rem .8rem;
+  cursor:pointer;
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  border-radius:0;
+  transition:background .25s ease, color .25s ease, border-color .25s ease;
+}
+.lang-select:hover{background:rgba(143,217,232,.1);color:var(--ice);}
+.lang-select:focus{outline:none;border-color:var(--gold);}
+.lang-select-wrap::after{
+  content:'▾';position:absolute;right:.6rem;top:50%;
+  transform:translateY(-50%);color:var(--frost-dim);font-size:.65rem;pointer-events:none;
+}
+.lang-select option{background:var(--panel);color:var(--ice);}
+
+html[dir="rtl"] .rules li em{margin-left:1rem;margin-right:0;}
 
   /* ---------- power milestone bar ---------- */
   .milestone-bar{
@@ -358,7 +368,17 @@
       <li><a href="#codes" data-i18n="nav_codes">Codes</a></li>
     </ul>
   </nav>
-  <button id="langToggle" class="lang-btn" type="button" aria-label="Switch language">FR</button>
+  <div class="lang-select-wrap">
+  <select id="langSelect" class="lang-select" aria-label="Switch language">
+    <option value="en">EN</option>
+    <option value="fr">FR</option>
+    <option value="es">ES</option>
+    <option value="it">IT</option>
+    <option value="ko">KO</option>
+    <option value="ar">AR</option>
+    <option value="pt">PT</option>
+  </select>
+</div>
 </header>
 
 <div class="milestone-bar">
@@ -659,125 +679,8 @@
 </script>
 
 <script>
-(function(){
-  const translations = {
-    fr: {
-      nav_alliance:"Alliance", nav_news:"News", nav_leadership:"Leadership", nav_nap:"NAP", nav_events:"Événements", nav_guides:"Guides", nav_codes:"Codes",
-      milestone_label:'Prochain palier de puissance <strong>2B</strong>',
-      milestone_remain:'— 150.0M restants',
-      hero_region_tag:"Région 4511",
-      hero_sub:"Quand le froid a tout emporté, <strong>LUX</strong> a gardé la lumière allumée. Une alliance internationale de la région 4511 sur Whiteout Survival — discipline, esprit d'équipe, et une flamme qui ne s'éteint jamais.",
-      scroll_cue:"Défiler ↓",
-      news_eyebrow:"Dernières nouvelles", news_title:"News",
-      news_status:"À noter",
-      news_h3:"Les héros Gen 2 arrivent",
-      news_body:`<p style="margin-bottom:.7rem;">Chaque génération de héros apporte trois nouveaux héros — un Infanterie, un Lancier et un Tireur. Chaque génération comprend 5 à 6 Roues Chanceuses (une génération dure environ 80 jours). Tu pourras toujours choisir les héros précédents aussi.</p>
-      <p style="margin-bottom:.7rem;"><strong style="color:var(--ice);">Flint</strong> arrive sur la roue dans trois jours et quelques heures — un héros Infanterie, et important à obtenir. C'est une énorme amélioration par rapport à Sergey.</p>
-      <p style="margin-bottom:.7rem;">Il n'y a pas de nombre exact de diamants nécessaires pour l'obtenir, mais la roue dépend de la chance plus des paliers de tirages spécifiques qui garantissent des fragments de héros.</p>
-      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
-        <li style="margin-bottom:.4rem;">1 tirage : 1 500 diamants — 10 tirages : 13 500 diamants.</li>
-        <li style="margin-bottom:.4rem;">Utilise l'option 10 tirages — c'est moins cher par tirage.</li>
-        <li style="margin-bottom:.4rem;">Les paliers garantis de fragments s'afficheront sur la roue une fois l'événement lancé.</li>
-        <li style="margin-bottom:.4rem;">Le dernier palier est à 120 tirages — ne dépasse pas ce seuil sauf si tu es vraiment très riche. Atteindre 120 tirages coûte environ <strong style="color:var(--ice);">162 000 diamants</strong>.</li>
-        <li>Le Jour 2 du HOC donne des points pour la roue.</li>
-      </ul>
-      <p style="color:var(--frost);font-size:.88rem;margin-bottom:.9rem;"><strong style="color:var(--ice);">Note :</strong> n'utilise pas les fragments génériques sur les héros de la roue.</p>
-      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Résumé :</strong></p>
-      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;">
-        <li style="margin-bottom:.4rem;">Ne tourne la roue que si tu as assez de gemmes pour 70 ou 120 tirages au total par événement.</li>
-        <li style="margin-bottom:.4rem;">Fais toujours des tirages 10x pour avoir la réduction.</li>
-        <li style="margin-bottom:.4rem;">Ton objectif est d'atteindre au moins 4 étoiles sur le héros.</li>
-        <li style="margin-bottom:.4rem;">N'utilise jamais les fragments génériques sur un héros de la roue — mieux vaut les garder jusqu'à en avoir ~475, puis tout utiliser sur un héros hors-roue au début d'une future génération pour l'amener à 4 étoiles.</li>
-        <li>Si tu participes au HOC, utilise aussi la roue le Jour 2.</li>
-      </ul>`,
-      about_eyebrow:"L'alliance", about_title:"À propos &amp; règles",
-      about_p1:'<strong>LUX</strong> — « lumière » en latin — rassemble des chefs de la région 4511 qui ont choisi de survivre et de progresser ensemble plutôt que seuls dans le blizzard.',
-      about_p2:"Nous valorisons <strong>l'entraide quotidienne</strong> (aide à la construction, partage de ressources) et <strong>la participation active</strong> aux événements de l'alliance et de la région.",
-      about_rules:`<li><em>01</em> Reste actif : connexion quotidienne recommandée.</li>
-        <li><em>02</em> Participe aux événements de l'alliance (siège, guerre, migration).</li>
-        <li><em>03</em> Respect entre membres — aucune toxicité tolérée.</li>
-        <li><em>04</em> Préviens-nous si tu t'absentes un moment.</li>
-        <li><em>05</em> Contribue régulièrement à la recherche de l'alliance.</li>`,
-      stat_fullname:"Nom complet", stat_region:"Région", stat_power:"Puissance", stat_rank:"Rang royaume", stat_founded:"Fondée le", stat_language:"Langue", stat_language_val:"Toutes langues", stat_members:"Membres",
-      roster_eyebrow:"Effectif", roster_title:"Leadership",
-      th_name:"Nom", th_rank:"Rang", th_role:"Rôle", role_leader:"Chef d'alliance",
-      roster_note:"Leadership R5/R4 à jour.",
-      nap_eyebrow:"Diplomatie", nap_title:"Pacte de non-agression (NAP)",
-      nap_intro:"Pacte de non-agression négocié entre les R4/R5 des deux alliances. Tous les membres doivent respecter ces règles :",
-      nap_list:`<li style="margin-bottom:.55rem;">Aucune attaque sur les villes, rallyes, QG ou bannières des membres du NAP.</li>
-      <li style="margin-bottom:.55rem;">Aucun espionnage des villes ou cases de ressources du NAP.</li>
-      <li style="margin-bottom:.55rem;">Aucun débauchage de joueurs du NAP.</li>
-      <li style="margin-bottom:.55rem;">Les violations sont d'abord réglées entre les R4/R5 des deux alliances.</li>
-      <li style="margin-bottom:.55rem;">Les sanctions touchent uniquement le joueur, pas l'alliance — 1er : avertissement, 2e : rétrogradation, 3e : exclu du NAP.</li>
-      <li style="margin-bottom:.55rem;">Forteresse / Installation / Bastion : aucune attaque de ville pendant ces batailles ; 1 forteresse par alliance (selon le rang, vérifié le dimanche) ; le Bastion est réservé au Top 4 des alliances ; interdiction de bloquer les chemins ou d'engloutir les installations de bannière.</li>
-      <li style="margin-bottom:.55rem;">Un seul compte ferme/académie par alliance.</li>
-      <li style="margin-bottom:.55rem;">Interdiction de retirer son tag pour attaquer une alliance du Top 10 afin de contourner le NAP.</li>
-      <li style="margin-bottom:.55rem;">Les règles PvP des événements prennent le pas sur le NAP pendant SvS, Bear Invasion Alliance, Brothers Battle, etc.</li>
-      <li>Respect, coopération et fair-play en toutes circonstances.</li>`,
-      events_eyebrow:"En cours", events_title:"Événements",
-      status_signup:"Inscriptions ouvertes", status_guidelines:"Consignes", status_upcoming:"À venir", status_reference:"Référence",
-      champ_h3:"Championnat de l'alliance",
-      champ_body:`<p style="margin-bottom:.7rem;">Même si tu ne peux pas combattre, tu reçois quand même des récompenses juste pour t'être inscrit — n'oublie pas de t'inscrire.</p>
-      <ol style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;">
-        <li style="margin-bottom:.5rem;">Envoie tes 3 meilleurs héros.</li>
-        <li style="margin-bottom:.5rem;">Pour la répartition des troupes, essaie de respecter au mieux un ratio Infanterie : Lancier : Tireur de 5:2:3.</li>
-        <li>Il y aura une période d'ajustement des lignes après l'inscription — pour faciliter les choses, inscris-toi sur la ligne du milieu.</li>
-      </ol>`,
-      bear_h3:"Bear Traps — Stratégie de rallye",
-      bear_body:`<p style="margin-bottom:.7rem;"><strong style="color:var(--ice);">Lance un rallye</strong> avec tes meilleurs héros — pas de Gina, pas de héros bleus. Équilibre tes troupes pour pouvoir rejoindre un maximum de points de rallye.</p>
-      <p style="margin-bottom:.7rem;"><strong style="color:var(--ice);">Puis rejoins les autres rallyes</strong> menés avec :</p>
-      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
-        <li style="margin-bottom:.4rem;">Jessie + un autre + un autre (équilibre)</li>
-        <li style="margin-bottom:.4rem;">Jaser + un autre + un autre (équilibre)</li>
-        <li style="margin-bottom:.4rem;">Seo Yoon + un autre + un autre (équilibre)</li>
-        <li>Tu peux aussi rejoindre sans héros.</li>
-      </ul>
-      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Attention :</strong> un mauvais héros impacte tout le rallye.</p>`,
-      weapon_h3:"Événement Usine d'Armes",
-      weapon_body:`Les inscriptions ferment aujourd'hui.<br>
-      Escouade 1 — UTC 14:00<br>
-      Escouade 2 — UTC 19:00<br><br>
-      N'oublie pas de t'inscrire à l'avance. Manquer deux inscriptions sans raison valable entraînera ton retrait de la participation — inscris-toi seulement si tu peux vraiment être présent.<br><br>
-      <strong style="color:var(--ice);">Note :</strong> voter pour un créneau horaire n'est <em style="font-style:italic;color:var(--frost);">pas</em> la même chose que s'inscrire. Tu dois aller dans l'escouade pour laquelle tu as voté et cocher « participer ».`,
-      siege_h3:"Siège de l'alliance",
-      siege_body:`<p style="margin-bottom:.8rem;">Deux événements de siège à venir — <strong style="color:var(--ice);">Bastion Fort</strong> et <strong style="color:var(--ice);">Solar Castle</strong>. Cibles assignées : Château 2, Fort 7, Fort 9. Les complexes devront aussi être défendus. Prépare tes garnisons et coordonne la défense du bastion avec le reste de LUX.</p>
-      <p style="margin-bottom:.8rem;"><strong style="color:var(--ice);">Aujourd'hui :</strong> batailles au Bastion #2 et aux Forteresses #7 &amp; #9. Consulte le planning pour les horaires exacts.</p>
-      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Règles :</strong></p>
-      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
-        <li style="margin-bottom:.4rem;">Suis les instructions des R4 et rejoins leurs rallyes (Jessie).</li>
-        <li style="margin-bottom:.4rem;">Après le rallye, envoie Patrick.</li>
-        <li style="margin-bottom:.4rem;">Reste dans la Forteresse/le Bastion au moins 1 minute pour sauvegarder ta contribution.</li>
-        <li>Aucune attaque solo ou lancement de rallye — attaquer sans ordre entraînera l'exclusion de l'alliance.</li>
-      </ul>
-      <p style="color:var(--frost);font-size:.88rem;">Merci pour ta participation !</p>`,
-      migration_h3:"Migration de région",
-      migration_body:"Informations et fenêtre de migration pour la région 4511 — détails à confirmer.",
-      ratios_h3:"Ratios de troupes — Exploration Profonde",
-      ratios_intro:'Ratio de troupes (Infanterie : Lancier : Tireur). Base standard <strong style="color:var(--ice);">50:20:30</strong> — à ajuster par zone comme ci-dessous :',
-      zone_beast:"Grotte de la Bête", zone_gem:"Mine de Gemmes", zone_earth:"Noyau Terrestre", zone_hero:"Terre des Héros", zone_forge:"Forge d'Équipement", zone_lab:"Labo Souterrain",
-      snow_h3:"Snow Busters — Consignes stratégiques",
-      snow_body:`<p style="margin-bottom:.8rem;"><strong style="color:var(--ice);">Priorité équipement.</strong> Améliore d'abord le Manteau et les Gants ; ne passe aux autres équipements qu'une fois ceux-ci prioritaires.</p>
-      <p style="margin-bottom:.8rem;"><strong style="color:var(--ice);">Seuil d'arrêt.</strong> Une fois 95% du territoire déneigé, arrête le déneigement manuel et utilise la fusée (objet de déneigement instantané) pour finir le reste.</p>
-      <p style="margin-bottom:.8rem;"><strong style="color:var(--ice);">Efficacité du carburant.</strong> Chaque amélioration du fourneau étend automatiquement ton territoire. Évite de gaspiller du carburant en déneigeant en cercle autour du fourneau — avance plutôt en zigzag pour minimiser l'énergie perdue.</p>
-      <p><strong style="color:var(--ice);">Ordre de déneigement.</strong> Trois types de neige nécessitent des quantités d'énergie différentes : blanche (la plus faible), bleue (modérée) et glace (la plus élevée). Dégage-les dans cet ordre — blanche, puis bleue, puis glace — car chaque amélioration de cheminée réduit le coût en énergie par case par la suite.</p>`,
-      twin_h3:"Twin Stars — Astuces rapides",
-      twin_body:`<p style="margin-bottom:.7rem;"><strong style="color:var(--ice);">Équipe :</strong> forme une équipe avec des joueurs actifs. Les équipes incomplètes peuvent être remplies automatiquement, et l'équipe ne peut plus être modifiée une fois la sélection terminée.</p>
-      <p style="margin-bottom:.7rem;"><strong style="color:var(--ice);">Dés :</strong> les Dés Normaux avancent d'un nombre aléatoire de 1 à 6 cases. Garde les Dés de Cristal — ils permettent de choisir le nombre exact.</p>
-      <p><strong style="color:var(--ice);">Stratégie :</strong> garde les Dés de Cristal jusqu'à être à 1-6 cases du Coffre d'Aventure ou d'une récompense de valeur, puis tombe pile dessus. Ne gaspille pas les Dés de Cristal sur des déplacements aléatoires !</p>`,
-      guides_eyebrow:"Ressources", guides_title:"Guides &amp; astuces",
-      guide1_h3:"Priorités de construction en début de jeu",
-      guide1_body:"Concentre-toi sur le Fourneau, le Centre de Commandement et les bâtiments de ressources avant les casernes.",
-      guide2_h3:"Optimiser tes héros",
-      guide2_body:"Investis d'abord dans les héros qui correspondent à ton style de jeu (défense, économie ou exploration).",
-      guide3_h3:"Se préparer pour un siège",
-      guide3_body:"Renforce tes troupes de garnison et coordonne les horaires de connexion avec l'alliance avant l'événement.",
-      codes_eyebrow:"Cadeaux", codes_title:"Codes cadeaux",
-      codes_intro:"Utilise ces codes pour obtenir des récompenses gratuites en jeu. Les codes peuvent expirer à tout moment, utilise-les dès que possible.",
-      codes_android:"Android", codes_android_steps:"Profil → Paramètres → Code cadeau → entrer le code",
-      codes_ios:"iOS", codes_ios_steps:'Copie le code et ton ID joueur → va sur <a href="https://wos-giftcode.centurygame.com" style="color:var(--frost);" target="_blank" rel="noopener">wos-giftcode.centurygame.com</a> → saisis-les',
-      footer_note:"Site non-officiel, réalisé par l'alliance"
-    }
-  };
+<script src="i18n.js"></script>
+ ;
 
   let originals = {};
   document.querySelectorAll('[data-i18n]').forEach(el=>{
