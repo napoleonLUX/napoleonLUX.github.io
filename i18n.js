@@ -72,6 +72,22 @@
         <li>Tu peux aussi rejoindre sans héros.</li>
       </ul>
       <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Attention :</strong> un mauvais héros impacte tout le rallye.</p>`,
+      mercenary_h3:"Prestige des Mercenaires — Événement de Groupe",
+      mercenary_body:`<p style="margin-bottom:.7rem;">Si tu as déjà terminé en Facile la dernière fois, inscris-toi en Normal cette fois-ci.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Mercenaire Phaéton (paliers 5, 10, 15, 20, 25) :</strong></p>
+      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.4rem;">Demande de l'aide à ces paliers — le membre qui ouvre le rallye reçoit aussi une récompense.</li>
+        <li style="margin-bottom:.4rem;">Demande toujours de l'aide pour recevoir ta propre récompense sans gaspiller d'endurance.</li>
+        <li>Pour les autres paliers : attaque seul si possible, sinon ouvre un rallye.</li>
+      </ul>
+      <p style="margin-bottom:.7rem;">Les détails du boss mercenaire seront annoncés séparément.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Boss Prestige des Mercenaires :</strong> un horaire sera annoncé pour permettre au maximum de membres de participer, et le boss sera invoqué à ce moment-là.</p>
+      <p style="margin-bottom:.7rem;">Le boss est très faible, donc pour que chaque membre reçoive une récompense :</p>
+      <ol style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.5rem;">Envoie uniquement 1 troupe (sans héros) pour attaquer le boss. Une seule attaque suffit pour recevoir la récompense de participation.</li>
+        <li>Une fois que tout le monde a attaqué, attends l'appel du chef pour l'« attaque générale » avant d'envoyer ton équipe principale.</li>
+      </ol>
+      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Attention :</strong> le boss est assez faible pour qu'une attaque avec héros + troupes au maximum le tue et termine l'événement en avance — les autres membres rateraient alors leur récompense. Cette erreur peut entraîner une exclusion de l'alliance. Envoie seulement 1 troupe, attaque une seule fois. Toujours !</p>`,
       weapon_h3:"Événement Usine d'Armes",
       weapon_body:`Les inscriptions ferment aujourd'hui.<br>
       Escouade 1 — UTC 14:00<br>
@@ -189,6 +205,22 @@
         <li>También puedes unirte sin héroe.</li>
       </ul>
       <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Atención:</strong> un héroe malo afecta a toda la concentración.</p>`,
+      mercenary_h3:"Prestigio de Mercenarios — Evento de Grupo",
+      mercenary_body:`<p style="margin-bottom:.7rem;">Si ya lo completaste en Fácil la última vez, inscríbete en Normal esta vez.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Mercenario Faetón (niveles 5, 10, 15, 20, 25):</strong></p>
+      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.4rem;">Pide ayuda en estos niveles — el miembro que abre la concentración también recibe una recompensa.</li>
+        <li style="margin-bottom:.4rem;">Pide siempre ayuda para recibir tu propia recompensa sin gastar resistencia.</li>
+        <li>Para los demás niveles: ataca solo si puedes, o abre una concentración si no puedes.</li>
+      </ul>
+      <p style="margin-bottom:.7rem;">Los detalles del jefe mercenario se anunciarán por separado.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Jefe de Prestigio de Mercenarios:</strong> se anunciará un horario para que el máximo de miembros pueda participar, y el jefe será invocado en ese momento.</p>
+      <p style="margin-bottom:.7rem;">El jefe es muy débil, así que para que todos los miembros reciban una recompensa:</p>
+      <ol style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.5rem;">Envía solo 1 tropa (sin héroe) para atacar al jefe. Un solo ataque basta para obtener la recompensa de participación.</li>
+        <li>Una vez que todos hayan atacado, espera a que el líder llame al "ataque total" antes de enviar tu escuadrón principal.</li>
+      </ol>
+      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Advertencia:</strong> el jefe es lo bastante débil como para que un ataque con héroe y tropas al máximo lo mate y termine el evento antes de tiempo — otros miembros se quedarían entonces sin su recompensa. Cometer este error puede resultar en la expulsión de la alianza. Envía solo 1 tropa, ataca una sola vez. ¡Siempre!</p>`,
       weapon_h3:"Evento Fábrica de Armas",
       weapon_body:`Las inscripciones cierran hoy.<br>
       Escuadrón 1 — UTC 14:00<br>
@@ -306,6 +338,22 @@
         <li>Puoi unirti anche senza eroe.</li>
       </ul>
       <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Attenzione:</strong> un eroe scadente influisce sull'intero raduno.</p>`,
+      mercenary_h3:"Onore dei Mercenari — Evento di Gruppo",
+      mercenary_body:`<p style="margin-bottom:.7rem;">Se hai già completato a livello Facile la volta scorsa, iscriviti a Normale questa volta.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Mercenario Fetonte (livelli 5, 10, 15, 20, 25):</strong></p>
+      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.4rem;">Richiedi aiuto a questi livelli — anche il membro che apre il raduno riceve una ricompensa.</li>
+        <li style="margin-bottom:.4rem;">Richiedi sempre aiuto per ricevere la tua ricompensa senza sprecare energia.</li>
+        <li>Per gli altri livelli: attacca da solo se puoi, altrimenti apri un raduno.</li>
+      </ul>
+      <p style="margin-bottom:.7rem;">I dettagli sul boss mercenario saranno annunciati separatamente.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Boss dell'Onore dei Mercenari:</strong> verrà annunciato un orario per permettere al maggior numero di membri di partecipare, e il boss verrà evocato in quel momento.</p>
+      <p style="margin-bottom:.7rem;">Il boss è molto debole, quindi affinché ogni membro riceva una ricompensa:</p>
+      <ol style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.5rem;">Invia solo 1 truppa (senza eroe) per attaccare il boss. Un solo attacco è sufficiente per ottenere la ricompensa di partecipazione.</li>
+        <li>Una volta che tutti hanno attaccato, aspetta che il capo dia l'ordine di "attacco totale" prima di inviare la tua squadra principale.</li>
+      </ol>
+      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Attenzione:</strong> il boss è abbastanza debole da poter essere ucciso da un attacco con eroe e truppe al massimo, terminando l'evento in anticipo — altri membri perderebbero così la loro ricompensa. Questo errore può comportare l'espulsione dall'alleanza. Invia solo 1 truppa, attacca una sola volta. Sempre!</p>`,
       weapon_h3:"Evento Fabbrica di Armi",
       weapon_body:`Le iscrizioni chiudono oggi.<br>
       Squadra 1 — UTC 14:00<br>
@@ -423,6 +471,22 @@
         <li>영웅 없이도 합류할 수 있습니다.</li>
       </ul>
       <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">주의:</strong>부적합한 영웅은 전체 집결에 영향을 줍니다.</p>`,
+      mercenary_h3:"용병 명예 — 그룹 이벤트",
+      mercenary_body:`<p style="margin-bottom:.7rem;">지난번에 쉬움으로 클리어하신 분들은 이번엔 일반으로 신청하시면 됩니다.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">파에톤 용병 (5, 10, 15, 20, 25 단계):</strong></p>
+      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.4rem;">도움을 요청하시면 집결을 열어준 연맹원도 보상을 받을 수 있습니다.</li>
+        <li style="margin-bottom:.4rem;">스테미너를 소모하지 않고 본인 보상도 받을 수 있으니 꼭 도움을 요청하세요.</li>
+        <li>나머지 단계는 혼자 가능하면 혼자 공격하고, 안 되면 집결을 열어 잡으세요.</li>
+      </ul>
+      <p style="margin-bottom:.7rem;">보스 용병은 다시 공지하겠습니다.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">용병 명예 보스:</strong> 많은 연맹원이 참가할 수 있는 시간을 공지하여 그 시간에 소환합니다.</p>
+      <p style="margin-bottom:.7rem;">보스가 매우 약하기 때문에 모든 연맹원이 보상을 받으려면:</p>
+      <ol style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.5rem;">영웅을 제외하고 병사 1명만 출정시켜 보스를 공격하세요. 1회만 공격해도 참가 보상을 받을 수 있습니다.</li>
+        <li>모든 연맹원이 공격을 마친 후 맹주님의 총공격 지시가 있으면 그때 본인 1군으로 공격하세요.</li>
+      </ol>
+      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">주의:</strong> 보스가 약해서 영웅과 병사 수를 최대로 공격하면 보스를 잡고 이벤트가 조기 종료될 수 있습니다. 그러면 다른 연맹원이 보상을 받지 못합니다. 이 실수는 연맹 퇴출 대상이 될 수 있습니다. 병사 1명으로만, 딱 한 번만 공격하세요. 꼭!!</p>`,
       weapon_h3:"무기 공장 이벤트",
       weapon_body:`신청은 오늘 마감됩니다.<br>
       1분대 — UTC 14:00<br>
@@ -540,6 +604,22 @@
         <li>يمكنك الانضمام أيضاً بدون بطل.</li>
       </ul>
       <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">تنبيه:</strong> البطل السيئ يؤثر على التجمع بأكمله.</p>`,
+      mercenary_h3:"شرف المرتزقة — فعالية جماعية",
+      mercenary_body:`<p style="margin-bottom:.7rem;">إذا أكملتها بالفعل في المستوى السهل في المرة السابقة، سجّل في المستوى العادي هذه المرة.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">مرتزق فايتون (المراحل 5، 10، 15، 20، 25):</strong></p>
+      <ul style="color:var(--muted);font-size:.9rem;padding-right:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.4rem;">اطلب المساعدة في هذه المراحل — العضو الذي يفتح التجمع يحصل أيضاً على مكافأة.</li>
+        <li style="margin-bottom:.4rem;">اطلب المساعدة دائماً لتحصل على مكافأتك الخاصة دون إهدار القدرة على التحمل.</li>
+        <li>بالنسبة للمراحل الأخرى: هاجم بمفردك إن استطعت، أو افتح تجمعاً إذا لم تستطع.</li>
+      </ul>
+      <p style="margin-bottom:.7rem;">سيتم الإعلان عن تفاصيل زعيم المرتزقة بشكل منفصل.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">زعيم شرف المرتزقة:</strong> سيتم الإعلان عن موعد لتمكين أكبر عدد ممكن من الأعضاء من المشاركة، وسيتم استدعاء الزعيم في ذلك الوقت.</p>
+      <p style="margin-bottom:.7rem;">الزعيم ضعيف جداً، لذا لضمان حصول كل عضو على مكافأة:</p>
+      <ol style="color:var(--muted);font-size:.9rem;padding-right:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.5rem;">أرسل جندياً واحداً فقط (بدون بطل) لمهاجمة الزعيم. هجوم واحد يكفي للحصول على مكافأة المشاركة.</li>
+        <li>بمجرد أن يهاجم الجميع، انتظر نداء القائد بـ"الهجوم الشامل" قبل إرسال فرقتك الرئيسية.</li>
+      </ol>
+      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">تحذير:</strong> الزعيم ضعيف بما يكفي لأن هجوماً ببطل وأقصى عدد من الجنود قد يقتله وينهي الفعالية مبكراً — عندها سيفوت الأعضاء الآخرون مكافأتهم. قد يؤدي هذا الخطأ إلى الطرد من التحالف. أرسل جندياً واحداً فقط، وهاجم مرة واحدة فقط. دائماً!</p>`,
       weapon_h3:"فعالية مصنع الأسلحة",
       weapon_body:`التسجيل يُغلق اليوم.<br>
       الفرقة 1 — UTC 14:00<br>
@@ -657,6 +737,22 @@
         <li>Você também pode entrar sem herói.</li>
       </ul>
       <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Atenção:</strong> um herói ruim afeta toda a concentração.</p>`,
+      mercenary_h3:"Prestígio dos Mercenários — Evento em Grupo",
+      mercenary_body:`<p style="margin-bottom:.7rem;">Se você já concluiu no modo Fácil da última vez, inscreva-se no Normal desta vez.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Mercenário Faetonte (níveis 5, 10, 15, 20, 25):</strong></p>
+      <ul style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.4rem;">Peça ajuda nesses níveis — o membro que abre a concentração também recebe uma recompensa.</li>
+        <li style="margin-bottom:.4rem;">Sempre peça ajuda para receber sua própria recompensa sem gastar stamina.</li>
+        <li>Para os outros níveis: ataque sozinho se puder, ou abra uma concentração se não conseguir.</li>
+      </ul>
+      <p style="margin-bottom:.7rem;">Os detalhes do chefe mercenário serão anunciados separadamente.</p>
+      <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Chefe do Prestígio dos Mercenários:</strong> um horário será anunciado para permitir que o máximo de membros participe, e o chefe será invocado nesse momento.</p>
+      <p style="margin-bottom:.7rem;">O chefe é muito fraco, então para garantir que todo membro receba uma recompensa:</p>
+      <ol style="color:var(--muted);font-size:.9rem;padding-left:1.2rem;margin-bottom:.7rem;">
+        <li style="margin-bottom:.5rem;">Envie apenas 1 tropa (sem herói) para atacar o chefe. Um único ataque já garante a recompensa de participação.</li>
+        <li>Depois que todos atacarem, espere o chamado do líder para o "ataque geral" antes de enviar seu esquadrão principal.</li>
+      </ol>
+      <p style="color:var(--frost);font-size:.88rem;"><strong style="color:var(--ice);">Aviso:</strong> o chefe é fraco o suficiente para que um ataque com herói e tropas no máximo o mate e termine o evento antecipadamente — outros membros ficariam então sem sua recompensa. Esse erro pode resultar em remoção da aliança. Envie apenas 1 tropa, ataque uma única vez. Sempre!</p>`,
       weapon_h3:"Evento Fábrica de Armas",
       weapon_body:`As inscrições fecham hoje.<br>
       Esquadrão 1 — UTC 14:00<br>
