@@ -668,7 +668,7 @@
     pt: {
       nav_alliance:"Aliança", nav_news:"Notícias", nav_leadership:"Liderança", nav_nap:"NAP", nav_events:"Eventos", nav_guides:"Guias", nav_codes:"Códigos",
       milestone_label:'Próxima meta de poder <strong>2B</strong>',
-      milestone_remain:'— 2000M restantes',
+      milestone_remain:'— 200M restantes',
       hero_region_tag:"Região 4511",
       hero_sub:"Quando o frio levou tudo, a <strong>LUX</strong> manteve a luz acesa. Uma aliança internacional na região 4511 no Whiteout Survival — disciplina, trabalho em equipe e um fogo que nunca se apaga.",
       scroll_cue:"Rolar ↓",
