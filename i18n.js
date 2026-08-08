@@ -3,7 +3,7 @@
     fr: {
       nav_alliance:"Alliance", nav_news:"News", nav_leadership:"Leadership", nav_nap:"NAP", nav_events:"Événements", nav_guides:"Guides", nav_codes:"Codes",
       milestone_label:'Prochain palier de puissance <strong>2B</strong>',
-      milestone_remain:'— 90M restants',
+      milestone_remain:'— 200M restants',
       hero_region_tag:"Région 4511",
       hero_sub:"Quand le froid a tout emporté, <strong>LUX</strong> a gardé la lumière allumée. Une alliance internationale de la région 4511 sur Whiteout Survival — discipline, esprit d'équipe, et une flamme qui ne s'éteint jamais.",
       scroll_cue:"Défiler ↓",
@@ -136,7 +136,7 @@
     es: {
       nav_alliance:"Alianza", nav_news:"Noticias", nav_leadership:"Liderazgo", nav_nap:"NAP", nav_events:"Eventos", nav_guides:"Guías", nav_codes:"Códigos",
       milestone_label:'Próximo hito de poder <strong>2B</strong>',
-      milestone_remain:'— 90M restantes',
+      milestone_remain:'— 200M restantes',
       hero_region_tag:"Región 4511",
       hero_sub:"Cuando el frío se lo llevó todo, <strong>LUX</strong> mantuvo la luz encendida. Una alianza internacional en la región 4511 de Whiteout Survival — disciplina, trabajo en equipo y un fuego que nunca se apaga.",
       scroll_cue:"Desplázate ↓",
@@ -269,7 +269,7 @@
     it: {
       nav_alliance:"Alleanza", nav_news:"Notizie", nav_leadership:"Leadership", nav_nap:"NAP", nav_events:"Eventi", nav_guides:"Guide", nav_codes:"Codici",
       milestone_label:'Prossimo traguardo di potenza <strong>2B</strong>',
-      milestone_remain:'— 90M mancanti',
+      milestone_remain:'— 200M mancanti',
       hero_region_tag:"Regione 4511",
       hero_sub:"Quando il freddo ha portato via tutto, <strong>LUX</strong> ha tenuto accesa la luce. Un'alleanza internazionale nella regione 4511 su Whiteout Survival — disciplina, lavoro di squadra e un fuoco che non si spegne mai.",
       scroll_cue:"Scorri ↓",
@@ -402,7 +402,7 @@
     ko: {
       nav_alliance:"연맹", nav_news:"소식", nav_leadership:"지도부", nav_nap:"불가침조약", nav_events:"이벤트", nav_guides:"가이드", nav_codes:"코드",
       milestone_label:'다음 전투력 목표 <strong>2B</strong>',
-      milestone_remain:'— 잔액: 9천만',
+      milestone_remain:'— 2억 남음',
       hero_region_tag:"4511 서버",
       hero_sub:"추위가 모든 것을 앗아갔을 때, <strong>LUX</strong>는 불빛을 지켰습니다. Whiteout Survival 4511 서버의 국제 연맹 — 규율, 팀워크, 그리고 절대 꺼지지 않는 불꽃.",
       scroll_cue:"스크롤 ↓",
@@ -535,7 +535,7 @@
     ar: {
       nav_alliance:"التحالف", nav_news:"الأخبار", nav_leadership:"القيادة", nav_nap:"اتفاقية عدم الاعتداء", nav_events:"الفعاليات", nav_guides:"الأدلة", nav_codes:"الأكواد",
       milestone_label:'الهدف التالي للقوة <strong>2B</strong>',
-      milestone_remain:'— يتبقى 90M',
+      milestone_remain:'— يتبقى 200M',
       hero_region_tag:"المنطقة 4511",
       hero_sub:"عندما أخذ البرد كل شيء، حافظ <strong>LUX</strong> على النور مشتعلاً. تحالف دولي في المنطقة 4511 على Whiteout Survival — انضباط، وعمل جماعي، ولهب لا ينطفئ أبداً.",
       scroll_cue:"مرر للأسفل ↓",
@@ -668,7 +668,7 @@
     pt: {
       nav_alliance:"Aliança", nav_news:"Notícias", nav_leadership:"Liderança", nav_nap:"NAP", nav_events:"Eventos", nav_guides:"Guias", nav_codes:"Códigos",
       milestone_label:'Próxima meta de poder <strong>2B</strong>',
-      milestone_remain:'— 90M restantes',
+      milestone_remain:'— 2000M restantes',
       hero_region_tag:"Região 4511",
       hero_sub:"Quando o frio levou tudo, a <strong>LUX</strong> manteve a luz acesa. Uma aliança internacional na região 4511 no Whiteout Survival — disciplina, trabalho em equipe e um fogo que nunca se apaga.",
       scroll_cue:"Rolar ↓",
