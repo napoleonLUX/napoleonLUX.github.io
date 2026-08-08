@@ -349,6 +349,47 @@
     html{scroll-behavior:auto;}
     .fade-up{transition:none;opacity:1;transform:none;}
   }
+@media (prefers-reduced-motion:reduce){
+    .aurora{animation:none;}
+    html{scroll-behavior:auto;}
+    .fade-up{transition:none;opacity:1;transform:none;}
+  }
+
+  .inline-art{
+    position:relative;
+    width:100%;
+    border-radius:2px;
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%),
+                        linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    -webkit-mask-composite:source-in;
+    mask-image:linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%),
+                linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    mask-composite:intersect;
+  }
+  .inline-art img{
+    width:100%;height:100%;display:block;
+    object-fit:cover;
+    filter:brightness(.88) saturate(1.05);
+  }
+  .art-news{
+    float:right;
+    width:280px;
+    margin:0 0 1.2rem 1.8rem;
+    aspect-ratio:1/1;
+  }
+  .art-portrait{
+    width:100%;
+    aspect-ratio:3/4;
+  }
+  .art-siege{
+    width:100%;
+    aspect-ratio:16/9;
+    margin-bottom:1.4rem;
+  }
+  @media (max-width:820px){
+    .art-news{float:none;width:100%;margin:0 0 1.4rem 0;aspect-ratio:16/9;}
+  }
 </style>
 </head>
 <body>
@@ -411,6 +452,10 @@
     <div class="event-card event-card--wide">
       <div class="event-status"><span class="dot"></span><span data-i18n="news_status">Heads up</span></div>
       <h3 data-i18n="news_h3">Gen 2 Heroes are coming</h3>
+      <div class="inline-art art-news">
+        <img src="images/images-3.jpeg" alt="Whiteout Survival Update" loading="lazy">
+      </div>
+      <div data-i18n="news_body">...
       <div data-i18n="news_body"><p style="margin-bottom:.7rem;">Every hero generation brings three new heroes — one Infantry, one Lancer, and one Marksman. Each generation includes 5–6 Lucky Wheels (a generation lasts about 80 days). You'll still have the option to pick previous heroes too.</p>
       <p style="margin-bottom:.7rem;"><strong style="color:var(--ice);">Flint</strong> arrives on the wheel in three days and some hours — an Infantry hero, and an important one to get. He's a massive upgrade over Sergey.</p>
       <p style="margin-bottom:.7rem;">There's no exact number of diamonds you need to get him, but the wheel comes down to luck plus specific spin milestones that guarantee hero shards.</p>
@@ -454,6 +499,10 @@
       </ul>
     </div>
     <div class="stat-panel">
+      <div class="inline-art art-portrait" style="margin-bottom:1.4rem;">
+        <img src="images/images-4.jpeg" alt="LUX hero" loading="lazy">
+      </div>
+      <div class="row"><span class="label" data-i18n="stat_fullname">Full name</span>...
       <div class="row"><span class="label" data-i18n="stat_fullname">Full name</span><span class="value">[LUX]LightUnitedX</span></div>
       <div class="row"><span class="label" data-i18n="stat_region">Region</span><span class="value">4511</span></div>
       <div class="row"><span class="label" data-i18n="stat_power">Power</span><span class="value">1.91B</span></div>
@@ -560,6 +609,10 @@
     <div class="event-card event-card--wide">
       <div class="event-status"><span class="dot"></span><span data-i18n="status_upcoming">Upcoming</span></div>
       <h3 data-i18n="siege_h3">Alliance Siege</h3>
+      <div class="inline-art art-siege">
+        <img src="images/images-2.jpeg" alt="Winter Siege" loading="lazy">
+      </div>
+      <div data-i18n="siege_body">...
       <div data-i18n="siege_body"><p style="margin-bottom:.8rem;">Two siege events coming up — <strong style="color:var(--ice);">Bastion Fort</strong> and <strong style="color:var(--ice);">Solar Castle</strong>. Assigned targets: Castle 2, Fort 7, Fort 9. Complexes will also need defending. Prepare your garrisons and coordinate bastion defense with the rest of LUX.</p>
       <p style="margin-bottom:.8rem;"><strong style="color:var(--ice);">Today:</strong> battles at Stronghold #2 and Fortresses #7 &amp; #9. Check the schedule for exact battle times.</p>
       <p style="margin-bottom:.5rem;"><strong style="color:var(--ice);">Rules:</strong></p>
